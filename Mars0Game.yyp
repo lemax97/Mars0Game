@@ -47,6 +47,7 @@
     {"id":{"name":"spr_bullet_player","path":"sprites/spr_bullet_player/spr_bullet_player.yy",},},
     {"id":{"name":"spr_enemy_red","path":"sprites/spr_enemy_red/spr_enemy_red.yy",},},
     {"id":{"name":"spr_live","path":"sprites/spr_live/spr_live.yy",},},
+    {"id":{"name":"spr_player_catcher","path":"sprites/spr_player_catcher/spr_player_catcher.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
   ],
   "resourceType":"GMProject",
