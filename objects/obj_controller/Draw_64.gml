@@ -12,6 +12,19 @@ if global.game_state != STATES.PLAYING
 	{
 		draw_text(850, 30, "GAME OVER");
 	}
+	
+	for (var _i = menu_min; _i < opt_number; _i++)
+	{
+		if menu_index == _i
+		{
+			draw_set_color(c_white);
+		}
+		else
+		{
+			draw_set_color(c_dkgray);
+		}
+		draw_text(850, 600 + 30 * _i, options[_i]);
+	}
 }
 
 if instance_exists(obj_player)
@@ -19,7 +32,9 @@ if instance_exists(obj_player)
 	var _xhp = 30;
 	repeat(obj_player.hp)
 	{
-		draw_sprite(spr_live, 0, _xhp, 750);
+		
+		image_speed = 0.2;
+		draw_sprite(spr_live, -1, _xhp, 750);
 		_xhp += 30;
 	}
 }
