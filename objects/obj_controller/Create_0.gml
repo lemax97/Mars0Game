@@ -4,6 +4,15 @@ enum STATES {
 	GAMEOVER
 };
 
+enum COLORS {
+NONE,
+RED,
+BLUE
+};
+
+sprite_index = spr_player_blue;
+color = COLORS.BLUE;
+
 randomize();
 
 global.game_state = STATES.PLAYING;

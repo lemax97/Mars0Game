@@ -34,7 +34,7 @@ if instance_exists(obj_player)
 	{
 		
 		image_speed = 0.2;
-		draw_sprite(spr_live, -1, _xhp, 750);
+		draw_sprite(spr_live, -1, _xhp, camera_get_view_height(view_camera[0])-30);
 		_xhp += 30;
 	}
 }
