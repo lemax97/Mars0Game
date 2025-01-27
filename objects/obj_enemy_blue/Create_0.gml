@@ -6,7 +6,7 @@ if room == rm_level_1
 }
 else
 {
-	color = COLORS.RED;
+	color = COLORS.BLUE;
 }
 
 dir = 1;

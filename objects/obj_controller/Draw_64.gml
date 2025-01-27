@@ -32,7 +32,6 @@ if instance_exists(obj_player)
 	var _xhp = 30;
 	repeat(obj_player.hp)
 	{
-		
 		image_speed = 0.2;
 		draw_sprite(spr_live, -1, _xhp, camera_get_view_height(view_camera[0])-30);
 		_xhp += 30;

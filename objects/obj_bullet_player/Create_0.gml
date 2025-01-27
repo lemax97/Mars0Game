@@ -1,3 +1,5 @@
+color = COLORS.NONE;
+
 atk = 1;
 spd = 10;
 

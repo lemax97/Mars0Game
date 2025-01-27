@@ -10,8 +10,7 @@ RED,
 BLUE
 };
 
-sprite_index = spr_player_blue;
-color = COLORS.BLUE;
+
 
 randomize();
 
