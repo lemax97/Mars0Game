@@ -1,0 +1,20 @@
+{
+  "$GMPath":"",
+  "%Name":"pth_room0R",
+  "closed":true,
+  "kind":1,
+  "name":"pth_room0R",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":-160.0,"y":192.0,},
+    {"speed":100.0,"x":192.0,"y":128.0,},
+    {"speed":100.0,"x":640.0,"y":96.0,},
+    {"speed":100.0,"x":1664.0,"y":192.0,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}
