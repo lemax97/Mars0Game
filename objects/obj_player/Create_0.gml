@@ -1,6 +1,7 @@
 hp = 3;
 spd = 10;
 atk = 1;
+super_attack = 0;
 
 sprite_index = spr_player_blue;
 color = COLORS.BLUE;

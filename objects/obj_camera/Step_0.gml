@@ -37,9 +37,9 @@ if global.game_state == STATES.PLAYING
 }
 else
 {
+	speed = 0;
 	if instance_exists(obj_player)
 	{
-		speed = 0;
 		obj_player.speed = 0;
 	}
 }

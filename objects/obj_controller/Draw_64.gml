@@ -7,10 +7,13 @@ if global.game_state != STATES.PLAYING
 	if global.game_state == STATES.PAUSED
 	{
 		draw_text(900, 30, "PAUSE");
+		audio_pause_all();
 	}
 	else
 	{
 		draw_text(850, 30, "GAME OVER");
+		
+		
 	}
 	
 	for (var _i = menu_min; _i < opt_number; _i++)
@@ -36,4 +39,18 @@ if instance_exists(obj_player)
 		draw_sprite(spr_live, -1, _xhp, camera_get_view_height(view_camera[0])-30);
 		_xhp += 30;
 	}
+	
+	var _sa = obj_player.super_attack;
+	draw_set_font(fnt_messages);
+	
+	if _sa >= 100
+	{
+		draw_set_color(c_white);
+	}
+	else
+	{
+		draw_set_color(c_gray);
+	}
+	
+	draw_text(30, 60, "X-BOMB: " + string(obj_player.super_attack) + "%");
 }

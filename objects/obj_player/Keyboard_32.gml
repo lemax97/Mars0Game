@@ -1,12 +1,17 @@
-if (can_shoot and global.game_state == STATES.PLAYING)
+if super_attack >= 100
 {
-	can_shoot = false;
+	var _cam = view_camera[0];
+	var _cam_x = camera_get_view_x(_cam);
+	var _cam_y = camera_get_view_y(_cam);
+	var _cam_w = camera_get_view_width(_cam);
+	var _cam_h = camera_get_view_height(_cam);
+	with obj_enemy
+	{
+		if point_in_rectangle(x, y, _cam_x, _cam_y, _cam_x + _cam_w, _cam_y + _cam_h)
+		{
+			instance_destroy();
+		}
+	}
 	
-	var _bullet = instance_create_layer(x, y, "Instances", obj_bullet_player);
-	_bullet.atk = atk;
-	_bullet.direction = point_direction(x, y, x, y - 1);
-	
-	audio_play_sound(snd_shoot, 1, false);
-	
-	alarm[0] = shoot_delay;
+	super_attack = 0;
 }

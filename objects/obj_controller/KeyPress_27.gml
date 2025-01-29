@@ -6,4 +6,5 @@ if global.game_state == STATES.PLAYING
 else if global.game_state == STATES.PAUSED
 {
 	global.game_state = STATES.PLAYING;
+	audio_resume_all();
 }
