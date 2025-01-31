@@ -1,4 +1,4 @@
-hp = 3;
+hp = 33;
 spd = 10;
 atk = 1;
 super_attack = 0;

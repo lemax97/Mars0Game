@@ -4,15 +4,14 @@ draw_text(30, 30, "SCORE: " + string(score));
 
 if global.game_state != STATES.PLAYING
 {
+	audio_pause_all();
 	if global.game_state == STATES.PAUSED
 	{
 		draw_text(900, 30, "PAUSE");
-		audio_pause_all();
 	}
 	else
 	{
 		draw_text(850, 30, "GAME OVER");
-		
 		
 	}
 	

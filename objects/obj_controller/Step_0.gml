@@ -1,5 +1,7 @@
 if global.game_state != STATES.PLAYING //menu managing
 {
+	
+		
 	if global.game_state == STATES.PAUSED
 	{
 		menu_min = 0;
