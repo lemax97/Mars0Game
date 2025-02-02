@@ -8,11 +8,22 @@ if global.game_state != STATES.PLAYING
 	if global.game_state == STATES.PAUSED
 	{
 		draw_text(900, 30, "PAUSE");
-	}
-	else
-	{
-		draw_text(850, 30, "GAME OVER");
 		
+	}
+	else //not playing and not paused
+	{
+		if (room == rm_level_2 and !instance_exists(obj_boss))
+		{
+			draw_text(850, 30, "VICTORY");
+			audio_stop_sound(snd_game_music);
+			audio_play_sound(snd_victory, 1, false);
+		}
+		else
+		{
+			draw_text(850, 30, "GAME OVER");
+			audio_stop_sound(snd_game_music);
+			audio_play_sound(snd_gameovermusic, 1, false);
+		}
 	}
 	
 	for (var _i = menu_min; _i < opt_number; _i++)

@@ -1,6 +1,7 @@
 enum STATES {
 	PLAYING,
 	PAUSED,
+	VICTORY,
 	GAMEOVER
 };
 

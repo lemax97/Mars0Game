@@ -7,10 +7,13 @@ if global.game_state == STATES.PLAYING
 		var _cam_w = camera_get_view_width(cam);
 		var _cam_h = camera_get_view_height(cam);
 		
-		if _cam_y <= 0
+		//show_debug_message(string(_cam_y));
+		
+		if (_cam_y <= 3000)
 		{
 			spd = 0;
 		}
+		
 		speed = spd;
 		obj_player.speed = spd;
 		
@@ -35,11 +38,12 @@ if global.game_state == STATES.PLAYING
 		}
 	}
 }
-else
+else //if not PLAYING
 {
 	speed = 0;
 	if instance_exists(obj_player)
 	{
+		
 		obj_player.speed = 0;
 	}
 }
