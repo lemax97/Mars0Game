@@ -4,8 +4,15 @@ var _cam_y = camera_get_view_y(_cam);
 var _cam_w = camera_get_view_width(_cam);
 var _cam_h = camera_get_view_height(_cam);
 
-if room == rm_level_1 and global.game_state == STATES.PLAYING
+if global.game_state == STATES.PLAYING
 {
-	y += 50;
+	if x > _cam_x and x < _cam_x + _cam_w 
+		and y > _cam_y and y < _cam_y + _cam_h
+	{
+		var _bullet = instance_create_layer(x, y, "Instances",
+			obj_bullet_bomb_enemy);
+		_bullet.atk = atk;
+		_bullet.direction = 270;
+	}
 }
-alarm[0] = move_down_speed;
+alarm[0] = game_get_speed(gamespeed_fps) * random_range(0.5, 5);

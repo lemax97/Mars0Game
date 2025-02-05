@@ -11,7 +11,8 @@ RED,
 BLUE
 };
 
-
+x_dimension = 1024;//Screen size
+y_dimension = 768;
 
 randomize();
 
