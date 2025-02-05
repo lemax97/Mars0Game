@@ -1,20 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_enemy_walker_blue",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_man",
+  "eventList":[],
   "managed":true,
-  "name":"obj_enemy_walker_blue",
+  "name":"obj_man",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
-  "parentObjectId":{
-    "name":"obj_enemy",
-    "path":"objects/obj_enemy/obj_enemy.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -33,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_enemy_blue",
-    "path":"sprites/spr_enemy_blue/spr_enemy_blue.yy",
+    "name":"spr_man_idle",
+    "path":"sprites/spr_man_idle/spr_man_idle.yy",
   },
   "spriteMaskId":null,
   "visible":true,
