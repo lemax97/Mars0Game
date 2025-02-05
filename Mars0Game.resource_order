@@ -18,6 +18,7 @@
   "ResourceOrderSettings":[
     {"name":"fnt_messages","order":1,"path":"fonts/fnt_messages/fnt_messages.yy",},
     {"name":"obj_boss","order":14,"path":"objects/obj_boss/obj_boss.yy",},
+    {"name":"obj_bullet_bomb_enemy","order":17,"path":"objects/obj_bullet_bomb_enemy/obj_bullet_bomb_enemy.yy",},
     {"name":"obj_bullet_enemy","order":4,"path":"objects/obj_bullet_enemy/obj_bullet_enemy.yy",},
     {"name":"obj_bullet_player","order":2,"path":"objects/obj_bullet_player/obj_bullet_player.yy",},
     {"name":"obj_camera","order":5,"path":"objects/obj_camera/obj_camera.yy",},
@@ -51,6 +52,7 @@
     {"name":"spr_backgroundlevel2","order":20,"path":"sprites/spr_backgroundlevel2/spr_backgroundlevel2.yy",},
     {"name":"spr_boss","order":17,"path":"sprites/spr_boss/spr_boss.yy",},
     {"name":"spr_bullet_blue","order":11,"path":"sprites/spr_bullet_blue/spr_bullet_blue.yy",},
+    {"name":"spr_bullet_bomb_enemy","order":21,"path":"sprites/spr_bullet_bomb_enemy/spr_bullet_bomb_enemy.yy",},
     {"name":"spr_bullet_player","order":1,"path":"sprites/spr_bullet_player/spr_bullet_player.yy",},
     {"name":"spr_bullet_red","order":10,"path":"sprites/spr_bullet_red/spr_bullet_red.yy",},
     {"name":"spr_bullet","order":12,"path":"sprites/spr_bullet/spr_bullet.yy",},
