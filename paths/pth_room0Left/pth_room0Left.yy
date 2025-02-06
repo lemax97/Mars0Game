@@ -1,0 +1,22 @@
+{
+  "$GMPath":"",
+  "%Name":"pth_room0Left",
+  "closed":true,
+  "kind":1,
+  "name":"pth_room0Left",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":-192.0,"y":-32.0,},
+    {"speed":100.0,"x":192.0,"y":32.0,},
+    {"speed":100.0,"x":640.0,"y":64.0,},
+    {"speed":100.0,"x":1152.0,"y":32.0,},
+    {"speed":100.0,"x":1600.0,"y":-32.0,},
+    {"speed":100.0,"x":640.0,"y":-64.0,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}
