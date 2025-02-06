@@ -10,7 +10,7 @@ if global.game_state == STATES.PLAYING
 		and y > _cam_y and y < _cam_y + _cam_h
 	{
 		var _bullet = instance_create_layer(x, y, "Instances",
-			obj_bullet_bomb_enemyR);
+			obj_bullet_bomb_enemyB);
 		_bullet.atk = atk;
 		_bullet.direction = 270;
 	}

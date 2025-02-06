@@ -7,4 +7,4 @@ direction = 270;
 
 alarm[0] = game_get_speed(gamespeed_fps) * random_range(0.5, 5);
 
-path_start(pth_room0Right, spd, path_action_restart, true);
+path_start(pth_room0Left, spd, path_action_restart, false);

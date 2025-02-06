@@ -17,8 +17,11 @@ y_dimension = 768;
 randomize();
 
 global.game_state = STATES.PLAYING;
-
-audio_play_sound(snd_game_music, 1, false);
+if (room == rm_level_0)
+{
+	//do nothing
+}
+else audio_play_sound(snd_game_music, 1, false);
 
 game_set_speed(60, gamespeed_fps);
 

@@ -16,13 +16,11 @@ if global.game_state != STATES.PLAYING
 		{
 			draw_text(850, 30, "VICTORY");
 			audio_stop_sound(snd_game_music);
-			audio_play_sound(snd_victory, 1, false);
 		}
 		else
 		{
 			draw_text(850, 30, "GAME OVER");
 			audio_stop_sound(snd_game_music);
-			audio_play_sound(snd_gameovermusic, 1, false);
 		}
 	}
 	
@@ -40,7 +38,7 @@ if global.game_state != STATES.PLAYING
 	}
 }
 
-if instance_exists(obj_player)
+if (instance_exists(obj_player))
 {
 	var _xhp = 30;
 	repeat(obj_player.hp)
@@ -63,4 +61,15 @@ if instance_exists(obj_player)
 	}
 	
 	draw_text(30, 60, "X-BOMB: " + string(obj_player.super_attack) + "%");
+}
+
+if (instance_exists(obj_player_defender))
+{
+	var _xhp = 30;
+	repeat(obj_player_defender.hp)
+	{
+		image_speed = 0.2;
+		draw_sprite(spr_live, -1, _xhp, camera_get_view_height(view_camera[0])-30);
+		_xhp += 30;
+	}
 }
