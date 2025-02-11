@@ -19,7 +19,7 @@ randomize();
 global.game_state = STATES.PLAYING;
 if (room == rm_level_0)
 {
-	//do nothing
+	alarm[0] = game_get_speed(gamespeed_fps) * random_range(0.5, 5);
 }
 else audio_play_sound(snd_game_music, 1, false);
 
@@ -29,3 +29,5 @@ options = ["RESUME", "RESTART", "QUIT"];
 opt_number = array_length(options);
 menu_min = 0;
 menu_index = 0;
+
+

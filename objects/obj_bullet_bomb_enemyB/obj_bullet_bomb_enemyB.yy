@@ -15,7 +15,10 @@
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_bullet_bomb_enemy",
+    "path":"objects/obj_bullet_bomb_enemy/obj_bullet_bomb_enemy.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

@@ -2,6 +2,8 @@ draw_set_font(fnt_messages);
 draw_set_color(c_yellow);
 draw_text(30, 30, "SCORE: " + string(score));
 
+var _cam = view_camera[0];
+
 if global.game_state != STATES.PLAYING
 {
 	audio_pause_all();
@@ -44,7 +46,7 @@ if (instance_exists(obj_player))
 	repeat(obj_player.hp)
 	{
 		image_speed = 0.2;
-		draw_sprite(spr_live, -1, _xhp, camera_get_view_height(view_camera[0])-30);
+		draw_sprite(spr_live, -1, _xhp, camera_get_view_height(_cam)-30);
 		_xhp += 30;
 	}
 	
@@ -66,10 +68,14 @@ if (instance_exists(obj_player))
 if (instance_exists(obj_player_defender))
 {
 	var _xhp = 30;
+	var _hp = obj_player_defender.hp;
+	
+	var _h = 30;
+	
 	repeat(obj_player_defender.hp)
 	{
 		image_speed = 0.2;
-		draw_sprite(spr_live, -1, _xhp, camera_get_view_height(view_camera[0])-30);
+		draw_sprite(spr_live, -1, camera_get_view_width(_cam) - _xhp, _h);
 		_xhp += 30;
 	}
 }
